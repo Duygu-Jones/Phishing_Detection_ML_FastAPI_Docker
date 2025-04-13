@@ -1,5 +1,5 @@
 <h1 align="center">
-Phishing Detection Web Application 🛡️
+Deploying ML Model for Phishing Detection 🛡️
   
 FastAPI - Streamlit - Docker
 </h1>
@@ -8,7 +8,7 @@ FastAPI - Streamlit - Docker
   <img src="https://github.com/Duygu-Jones/Phishing_Detection_ML_FastAPI_Docker/blob/main/data/image.png">
 </p>
 
-## Introduction
+## Overview
 
 This project demonstrates how to build and deploy a machine learning model that detects phishing websites based on URL features. 
 - Using `scikit-learn` for model training, `FastAPI` for the backend API, and `Streamlit` for the user interface, we've created an application that helps users identify potentially malicious websites. The entire solution is containerized with `Docker` for easy deployment across different environments.
@@ -18,16 +18,6 @@ This project demonstrates how to build and deploy a machine learning model that 
 
 Phishing attacks remain one of the most common cybersecurity threats, with millions of people falling victim each year. These attacks trick users into revealing sensitive information through fake websites that look legitimate. Traditional detection methods often rely on blocklists, which cannot identify new phishing sites. This project addresses this challenge by developing a machine learning model that can identify potential phishing websites based on their URL features. 
 
-
-## Project Steps
-
-1. **Data Collection & Preprocessing**: Cleaned and prepared website data for model training.
-2. **Feature Engineering**: Extracted relevant features from URLs to identify phishing patterns.
-3. **Model Development**: Trained a Random Forest Classifier for phishing detection.
-
-
-
-Anlıyorum. İstediğiniz projenin adımlarını ayrıca veriyorum:
 
 ## 🛠️ Project Steps and Tech Stack
 
