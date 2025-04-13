@@ -80,7 +80,7 @@ Phishing attacks remain one of the most common cybersecurity threats, with milli
    uvicorn app.app:app --host 0.0.0.0 --port 8000
    
    # Start the Streamlit frontend (in another terminal)
-   streamlit run UI/appUI.py
+   streamlit run app/appUI.py
    ```
 
 5. **Access the Application**
