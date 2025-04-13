@@ -5,19 +5,18 @@ FastAPI - Streamlit - Docker
 </h1>
 
 <p align="center">
-  <img src="![alt text](image-1.png)">
+  <img src="https://github.com/Duygu-Jones/Phishing_Detection_ML_FastAPI_Docker/blob/main/data/image.png">
 </p>
 
 ## Introduction
 
-This project aims to detect phishing websites using machine learning algorithms. The application provides an easy-to-use interface for checking websites based on their features to determine if they are legitimate or potential phishing attempts.
+This project demonstrates how to build and deploy a machine learning model that detects phishing websites based on URL features. 
+- Using `scikit-learn` for model training, `FastAPI` for the backend API, and `Streamlit` for the user interface, we've created an application that helps users identify potentially malicious websites. The entire solution is containerized with `Docker` for easy deployment across different environments.
 
 
 ## Problem Statement
 
-Phishing attacks remain one of the most common cybersecurity threats, with millions of people falling victim each year. These attacks trick users into revealing sensitive information through fake websites that look legitimate. Traditional detection methods often rely on blocklists, which cannot identify new phishing sites.
-
-This project addresses this challenge by developing a machine learning model that can identify potential phishing websites based on their URL features. The application is deployed as a web service using FastAPI for the backend and Streamlit for the user interface, making it accessible to users who need to verify suspicious URLs.
+Phishing attacks remain one of the most common cybersecurity threats, with millions of people falling victim each year. These attacks trick users into revealing sensitive information through fake websites that look legitimate. Traditional detection methods often rely on blocklists, which cannot identify new phishing sites. This project addresses this challenge by developing a machine learning model that can identify potential phishing websites based on their URL features. 
 
 
 ## Project Steps
@@ -25,20 +24,23 @@ This project addresses this challenge by developing a machine learning model tha
 1. **Data Collection & Preprocessing**: Cleaned and prepared website data for model training.
 2. **Feature Engineering**: Extracted relevant features from URLs to identify phishing patterns.
 3. **Model Development**: Trained a Random Forest Classifier for phishing detection.
-4. **API Development**: Created a FastAPI backend to serve predictions.
-5. **UI Creation**: Built a user-friendly interface with Streamlit.
-6. **Containerization**: Packaged the application with Docker for easy deployment.
-7. **Testing**: Developed test scripts to ensure the API works correctly.
 
 
-## 🛠️ Tech Stack
 
-- **Backend**: FastAPI - Fast, modern Python web framework for building APIs with automatic documentation.
-- **Frontend**: Streamlit - Python library for creating interactive web applications for data science and machine learning.
-- **Machine Learning**: Scikit-learn - For training the Random Forest Classifier model.
-- **Data Processing**: Pandas, NumPy - For data manipulation and processing.
-- **Containerization**: Docker - For packaging the application and its dependencies.
-- **Visualization**: Matplotlib, Seaborn - For data visualization and model insights.
+Anlıyorum. İstediğiniz projenin adımlarını ayrıca veriyorum:
+
+## 🛠️ Project Steps and Tech Stack
+
+1. **Understanding the Problem:** Defining the phishing detection challenge
+2. **Exploratory Data Analysis:** Understanding the dataset structure
+3. **Data Preprocessing:** Preparing the data for modeling
+4. **Model Development:** Building RandomForest Classifier model
+5. **Model Optimisation:** Hyperparameter tuning of the models
+6. **Deployment:** Creating a web application with FastAPI and Docker
+    - **API Development**: Created a FastAPI backend to serve predictions.
+    - **Containerization**: Packaged the application with Docker for easy deployment.
+    - **UI Creation**: Built a user-friendly interface with Streamlit.
+    - **Testing**: Developed test scripts to ensure the API works correctly.
 
 
 ## ⬇️ Installation
@@ -47,8 +49,8 @@ This project addresses this challenge by developing a machine learning model tha
 
 1. **Clone the Repository**
    ```bash
-   git clone https://github.com/username/phishing_detection.git
-   cd phishing_detection
+   git clone https://github.com/Duygu-Jones/Phishing_Detection_ML_FastAPI_Docker.git
+   cd Phishing_Detection_ML_FastAPI_Docker
    ```
 
 2. **Build the Docker Image**
@@ -67,10 +69,6 @@ This project addresses this challenge by developing a machine learning model tha
 ### Option 2: Using Virtual Environment
 
 1. **Clone the Repository and Enter the Main Folder**
-   ```bash
-   git clone https://github.com/username/phishing_detection.git
-   cd phishing_detection
-   ```
 
 2. **Create and Activate a Virtual Environment**
    ```bash
@@ -79,9 +77,6 @@ This project addresses this challenge by developing a machine learning model tha
    
    # Activate on Windows
    venv\Scripts\activate
-   
-   # Activate on macOS/Linux
-   source venv/bin/activate
    ```
 
 3. **Install Required Packages**
@@ -95,31 +90,12 @@ This project addresses this challenge by developing a machine learning model tha
    uvicorn app.app:app --host 0.0.0.0 --port 8000
    
    # Start the Streamlit frontend (in another terminal)
-   streamlit run app/appUI.py
+   streamlit run UI/appUI.py
    ```
 
 5. **Access the Application**
    - Streamlit UI: http://localhost:8501
-   - FastAPI API Swagger: http://localhost:8000/docs
 
-### Managing Docker Containers
-
-```bash
-# View running containers
-docker ps
-
-# Stop the container
-docker stop phishing-api
-
-# Restart the container
-docker start phishing-api
-
-# View container logs
-docker logs phishing-api
-
-# Remove the container (must stop it first)
-docker rm phishing-api
-```
 
 
 ## 📂 Project Structure
@@ -146,37 +122,24 @@ phishing-detection-app/
 
 ## 🔗 Related Links
 
-- **Kaggle Notebook**: [URL Phishing Detection](https://www.kaggle.com/notebooks)
-- **Medium Article**: [Building a Phishing Detection Web App with FastAPI and Streamlit](https://medium.com)
-- **GitHub Repository**: [Phishing Detection Web Application](https://github.com/username/phishing_detection)
+- **Kaggle Notebook**: [Website URL Phishing Detection](https://www.kaggle.com/code/duygujones/website-phishing-detection-ml-project)
+- **Medium Article**: [Step-by-Step Deploying a Machine Learning Model using FastAPI, Docker and Streamlit](https://medium.com/@duygujones/step-by-step-deploying-a-machine-learning-model-using-fastapi-docker-and-streamlit-a66bf9c85043)
+- **GitHub Repository**: [Phishing Detection ML Deploy FastAPI, Docker](https://github.com/Duygu-Jones/Phishing_Detection_ML_FastAPI_Docker/tree/main)
 
 
 ## 🌱 About Me
 
-I'm a data scientist and machine learning engineer passionate about cybersecurity and AI applications.
+I'm Duygu Jones, a Data Scientist with a curiosity for learning and development in the fields of Machine Learning and Generative AI.
 
-You can find more about me and my work through the following links:
+If you'd like to learn more about me and my work:
+- **LinkedIn**: [Linkedin/duygujones](https://www.linkedin.com/in/duygujones/)
+- **Website**: [duygujones.com](https://duygujones.vercel.app/)
+- **Kaggle**: [kaggle.com/duygujones](https://www.kaggle.com/duygujones)
+- **GitHub**: [github.com/Duygu-Jones](https://github.com/Duygu-Jones)
+- **Medium**: [medium.com/@duygujones](https://medium.com/@duygujones)
 
-- **LinkedIn**: [LinkedIn Profile](https://www.linkedin.com/in/username/)
-- **Website**: [Personal Website](https://website.com)
-- **Kaggle**: [Kaggle Profile](https://www.kaggle.com/username)
-- **GitHub**: [GitHub Profile](https://github.com/username)
-- **Medium**: [Medium Blog](https://medium.com/@username)
+Feel free to connect! I’d love to hear from you! 😊
 
-Feel free to connect with me!
-
-
-## 📚 References
-
-- FastAPI. (2023). *FastAPI Framework*. https://fastapi.tiangolo.com/
-- Streamlit. (2023). *Streamlit Documentation*. https://docs.streamlit.io/
-- Docker Inc. (2023). *Docker Documentation*. https://docs.docker.com/
-- Scikit-learn. (2023). *Random Forest Documentation*. https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html
-
-
-## ✨ Acknowledgements
-
-I would like to thank the open-source community for providing the tools and libraries that made this project possible. Special thanks to the FastAPI and Streamlit teams for their excellent documentation and user-friendly frameworks.
 
 If you find this repository helpful, don't forget to give it a ⭐ star.
 
